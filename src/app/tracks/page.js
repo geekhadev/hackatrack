@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import MainLayout from '@/components/MainLayout'
-import { getTracks } from '@/services/tracks.service'
+// import { getTracks } from '@/services/tracks.service'
 
 const TracksPage = async () => {
   // const tracks = await getTracks()

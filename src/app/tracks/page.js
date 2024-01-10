@@ -3,13 +3,13 @@ import MainLayout from '@/components/MainLayout'
 import { getTracks } from '@/services/tracks.service'
 
 const TracksPage = async () => {
-  const tracks = await getTracks()
+  // const tracks = await getTracks()
 
-  if (!tracks) {
-    return <div>Loading...</div>
-  }
+  // if (!tracks) {
+  //   return <div>Loading...</div>
+  // }
 
-  console.log('Esto es un mensaje')
+  // console.log('Esto es un mensaje')
 
   return (
     <MainLayout>
@@ -18,11 +18,11 @@ const TracksPage = async () => {
         Volver al home
       </Link>
 
-      <div className='flex flex-col gap-2'>
+      {/* <div className='flex flex-col gap-2'>
         {tracks.map(track => (
           <Link key={track.id} href={`/tracks/${track.id}`}>{track.title}</Link>
         ))}
-      </div>
+      </div> */}
     </MainLayout>
   )
 }

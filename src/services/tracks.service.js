@@ -1,5 +1,5 @@
 export const getTracks = async () => {
-  const response = await fetch('http://localhost:3000/api/tracks')
+  const response = await fetch('/api/tracks')
   const tracks = await response.json()
   return tracks
 }

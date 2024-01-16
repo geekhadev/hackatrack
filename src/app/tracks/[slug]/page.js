@@ -20,7 +20,7 @@ const getArticle = async (slug) => {
 }
 
 export default async function Page ({ params }) {
-  const { frontmatter, slug, content } = await getArticle(params.slug)
+  const { frontmatter, content } = await getArticle(params.slug)
   return (
     <TrackLayout>
         <h1>{frontmatter.title}</h1>

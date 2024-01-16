@@ -4,7 +4,7 @@ import TracksList from '@/components/TracksList'
 import { getTracksByStatus } from '@/services/tracks.service'
 
 export default async function Home () {
-  const tracks = await getTracksByStatus('pending')
+  const tracks = await getTracksByStatus('draft')
   return (
     <MainLayout>
       <Hero />

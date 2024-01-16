@@ -1,0 +1,16 @@
+[
+  {
+    "title": "CMS Headless",
+    "date": "01 Enero 2023",
+    "excerpt": "Programar un BackEnd sin programar un BackEnd",
+    "cover": "/tracks/cms-headless.png",
+    "deploy": "",
+    "github": "",
+    "youtube": "",
+    "authorName": "@geekhadev",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/499907?v=4",
+    "authorGithub": "https://github.com/geekhadev",
+    "status": "draft",
+    "slug": "hola"
+  }
+]

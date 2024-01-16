@@ -10,18 +10,20 @@ const TracksList = ({ title, badget, tracks }) => (
       }
     </h3>
     <div className="grid grid-cols-3 gap-4 py-6">
-      {tracks.map(({ id, slug, title, description, image, date, avatar, author }) => (
+      {tracks.map(({ id, slug, title, excerpt, cover, date, authorAvatar, authorName }) => (
           <Link href={`/tracks/${slug}`} key={id} className="flex flex-col">
-            <img src={image} alt={title} className='rounded' />
-            <h3 className="col-span-2 text-xl mt-2 font-bold flex flex-row items-center gap-2 text-gray-200 text-balance">
-              {title}
-            </h3>
-            <p className="text-gray-400 text-balance">{description}</p>
-            <div className='flex gap-2 items-center'>
-              {avatar && <img className="size-6 rounded-full" src={avatar} alt={slug} />}
-              {date && <p className="text-gray-400 text-balance">{author}</p>}
-              {date && <p className="text-yellow-500 text-balance">Abre el: {date}</p>}
-            </div>
+            <img src={cover} alt={title} className='rounded' />
+            <dic className='flex flex-col gap-1'>
+              <h3 className="col-span-2 text-xl mt-4 font-bold flex flex-row items-center text-gray-200 text-balance">
+                {title}
+              </h3>
+              <p className="text-gray-400 text-balance">{excerpt}</p>
+              <div className='flex gap-2 items-center'>
+                {authorAvatar && <img className="size-6 rounded-full" src={authorAvatar} alt={authorName} />}
+                {date && <p className="text-gray-400 text-balance">{authorName}</p>}
+                {date && <p className="text-yellow-500 text-balance">Incia: {date}</p>}
+              </div>
+            </dic>
           </Link>
       ))}
     </div>

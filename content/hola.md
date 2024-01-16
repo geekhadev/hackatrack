@@ -1,8 +1,15 @@
 ---
-title: 'Algo mucho mejor'
-date: 'March 5, 2021'
-excerpt: 'Django is a very powerful, high level Python framework for building web applications'
-cover_image: '/images/posts/img3.jpg'
+title: 'CMS Headless'
+date: '01 Enero 2023'
+excerpt: 'es una arquitectura que permite separar el contenido de la presentación ...'
+cover: '/tracks/cms-headless.png'
+deploy: ''
+github: ''
+youtube: ''
+authorName: '@geekhadev'
+authorAvatar: 'https://avatars.githubusercontent.com/u/499907?v=4'
+authorGithub: 'https://github.com/geekhadev'
+status: 'draft'
 ---
 
 ### Introducción

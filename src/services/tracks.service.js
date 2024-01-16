@@ -1,4 +1,4 @@
-import { TRACKS } from '@/data/tracks.data'
+import TRACKS from '@/data/tracks.data.json'
 
 export const getTracksFetch = async () => {
   const response = await fetch(`${process.env.NEXT_PUBLIC_API}/tracks/pending`)

@@ -9,7 +9,8 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "content": "node ./src/scripts/generateContent.js"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.3",
@@ -23,7 +24,8 @@
     "next": "14.0.4",
     "path": "^0.12.7",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "yaml-front-matter": "^4.1.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.2.0",

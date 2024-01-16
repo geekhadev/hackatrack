@@ -18,7 +18,7 @@ const TracksList = ({ title, badget, tracks }) => (
             </h3>
             <p className="text-gray-400 text-balance">{description}</p>
             <div className='flex gap-2 items-center'>
-              {avatar && <img class="size-6 rounded-full" src={avatar} alt={slug} />}
+              {avatar && <img className="size-6 rounded-full" src={avatar} alt={slug} />}
               {date && <p className="text-gray-400 text-balance">{author}</p>}
               {date && <p className="text-yellow-500 text-balance">Abre el: {date}</p>}
             </div>

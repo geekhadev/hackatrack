@@ -6,7 +6,7 @@ import TrackLayout from '@/components/TrackLayout'
 
 const getArticle = async (slug) => {
   const markdownWithMeta = fs.readFileSync(
-    path.join('./src/content', slug + '.md'),
+    path.join('src/content', slug + '.md'),
     'utf-8'
   )
 

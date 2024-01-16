@@ -1,7 +1,10 @@
-import TrackLayout from '@/components/TrackLayout';
+---
+title: 'Algo mucho mejor'
+date: 'March 5, 2021'
+excerpt: 'Django is a very powerful, high level Python framework for building web applications'
+cover_image: '/images/posts/img3.jpg'
+---
 
-
-<TrackLayout>
 ### Introducción
 
 Next.js es un excelente framework de React que nos permite crear aplicaciones web de forma rápida y sencilla, con una excelente experiencia de desarrollo, y un equipo genial que siempre está en el top de JavaScript. Actualmente ha tenido mucho aumento en su popularidad, según la [StateOfJs](https:StateOfJs.com), se posiciona como uno de los mas usados frameworks de renderizado para  React. 
@@ -918,4 +921,3 @@ npm run dev
 2 - Analiza el código de la aplicación creada, y haz cambios para que puedas entender mejor como funciona, intenta crear otra pantalla o agregar un filtro de busqueda.
 
 3 - Cuando tengas la recomendación 1 y 2 hechas, intenta crear una aplicación desde cero, y usa el proyecto como referencia.
-</TrackLayout>

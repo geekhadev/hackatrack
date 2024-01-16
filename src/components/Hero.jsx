@@ -9,13 +9,13 @@ const Hero = () => {
           Mantente actualizado con las tecnologías más demandadas del mercado. Gracias a nuestros tracks
           en HackABoss te convertirás en un profesional del desarrollo. <span className="text-yellow-500">Complete tus habilidades del Bootcamp!</span>
         </p>
-        <div className="flex flex-col md:flex-row gap-2">
-        <a href="/tracks/completed" className="px-6 py-3 text-gray-900 font-bold rounded-full text-xl bg-yellow-500 hover:bg-yellow-600">
-          Ver tracks cerrados
-        </a>
-        <a href="https://www.hackaboss.com" target="_blank" className="px-6 py-3 text-gray-900 font-bold rounded-full text-xl bg-yellow-500 hover:bg-yellow-600">
-          Ir a nuestra página web
-        </a>
+        <div className="flex flex-wrap gap-2">
+          <a href="/tracks/completed" className="px-6 py-3 text-gray-900 font-bold rounded-full text-xl bg-yellow-500 hover:bg-yellow-600">
+            Ver tracks cerrados
+          </a>
+          <a href="https://www.hackaboss.com" target="_blank" className="px-6 py-3 text-gray-900 font-bold rounded-full text-xl bg-yellow-500 hover:bg-yellow-600">
+            Ir a nuestra página web
+          </a>
         </div>
       </div>
 

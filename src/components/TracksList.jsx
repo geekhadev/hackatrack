@@ -11,8 +11,8 @@ const TracksList = ({ title, badget, tracks }) => (
     </h3>
     <div className="grid grid-cols-3 gap-4 py-6">
       {tracks.map(({ id, slug, title, excerpt, cover, date, authorAvatar, authorName }) => (
-          <Link href={`/tracks/${slug}`} key={id} className="flex flex-col">
-            <img src={cover} alt={title} className='rounded' />
+          <Link href={`/tracks/${slug}`} key={id} className="flex flex-col group">
+            <img src={cover} alt={title} className='rounded-2xl group-hover:scale-105 group-hover:rotate-1 transition' />
             <dic className='flex flex-col gap-1'>
               <h3 className="col-span-2 text-xl mt-4 font-bold flex flex-row items-center text-gray-200 text-balance">
                 {title}

@@ -1,10 +1,10 @@
 import MainLayout from '@/components/MainLayout'
 import Hero from '@/components/Hero'
 import TracksList from '@/components/TracksList'
-import { getTracksFetch } from '@/services/tracks.service'
+import { getTracksByStatus } from '@/services/tracks.service'
 
 export default async function Home () {
-  const tracks = await getTracksFetch()
+  const tracks = await getTracksByStatus('pending')
   return (
     <MainLayout>
       <Hero />

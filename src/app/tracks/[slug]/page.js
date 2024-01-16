@@ -1,22 +1,9 @@
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
 import { marked } from 'marked'
 import TrackLayout from '@/components/TrackLayout'
-
-const getArticle = async (slug) => {
-  const markdownWithMeta = fs.readFileSync(
-    path.join('src/content', slug + '.md'),
-    'utf-8'
-  )
-
-  const { data: frontmatter, content } = matter(markdownWithMeta)
-
-  return { frontmatter, content }
-}
+import { findTrackFetch } from '@/services/tracks.service'
 
 export default async function Page ({ params }) {
-  const { frontmatter, content } = await getArticle(params.slug)
+  const { frontmatter, content } = await findTrackFetch(params.slug)
   return (
     <TrackLayout>
         <h1>{frontmatter.title}</h1>

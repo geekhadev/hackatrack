@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const yamlFront = require('yaml-front-matter')
 
-const directoryPath = path.join(__dirname, '../../content')
+const directoryPath = path.join(__dirname, '../content')
 const output = []
 
 fs.readdir(directoryPath, (err, files) => {
@@ -13,7 +13,6 @@ fs.readdir(directoryPath, (err, files) => {
   files.forEach(file => {
     if (path.extname(file) === '.md') {
       const fileName = path.basename(file, '.md')
-      console.log(fileName)
       const content = fs.readFileSync(path.join(directoryPath, file), 'utf8')
       const frontMatter = yamlFront.loadFront(content)
       delete frontMatter.__content

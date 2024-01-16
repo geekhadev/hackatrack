@@ -2,9 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Defined styles scrollbars globals */
+::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.8);
+}
+
+::-webkit-scrollbar
+{
+	width: 8px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px #867d63;
+	background-color: #867d63;
+}
+
 /* Defined styles mdx globals */
 .track-mdx pre {
-  background-color: rgb(39,39,39);
+  background-color: #31313C;
   border-radius: 0.25rem;
   padding: 1rem;
   overflow-x: auto;
@@ -18,21 +37,25 @@
 .track-mdx h1, .track-mdx h2, .track-mdx h3, .track-mdx h4, .track-mdx h5, .track-mdx h6 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+  font-weight: bold;
 }
 
 .track-mdx h1 {
   font-size: 2.25rem;
   line-height: 2.5rem;
+  color: rgb(221, 255, 0);
 }
 
 .track-mdx h2 {
   font-size: 1.875rem;
   line-height: 2.25rem;
+  color: rgb(247, 255, 198);
 }
 
 .track-mdx h3 {
   font-size: 1.5rem;
   line-height: 2rem;
+  color: rgb(247, 255, 198);
 }
 
 .track-mdx h4 {
@@ -50,7 +73,8 @@
   line-height: 1.5rem;
 }
 
-.track-mdx p {
+.track-mdx p, .track-mdx ul, .track-mdx ol, .track-mdx dl, .track-mdx blockquote, .track-mdx table, .track-mdx pre {
+  font-size: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -71,12 +95,12 @@
 }
 
 .track-mdx a {
-  color: rgb(0, 102, 204);
+  color: rgb(221, 255, 0);
   text-decoration: underline;
 }
 
 .track-mdx a:hover {
-  color: rgb(0, 102, 204);
+  color: rgb(204, 201, 0);
   text-decoration: none;
 }
 
@@ -85,6 +109,29 @@
   margin-bottom: 1rem;
   padding-left: 1rem;
   border-left-width: 0.25rem;
-  border-left-color: rgb(0, 102, 204);
+  border-left-color: rgb(204, 201, 0);
   border-left-style: solid;
+}
+
+.track-mdx table {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.track-mdx table th {
+  padding: 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  background-color: rgb(39,39,39);
+  text-align: left;
+}
+
+.track-mdx table td {
+  padding: 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
 }

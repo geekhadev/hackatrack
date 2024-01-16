@@ -1,5 +1,5 @@
 const MainLayout = ({ children }) => (
-  <main className='w-full px-6 pt-6'>
+  <main className="mx-auto max-w-5xl px-6 md:px-0">
     {children}
   </main>
 )

@@ -1,3 +1,90 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Defined styles mdx globals */
+.track-mdx pre {
+  background-color: rgb(39,39,39);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.track-mdx pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.track-mdx h1, .track-mdx h2, .track-mdx h3, .track-mdx h4, .track-mdx h5, .track-mdx h6 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.track-mdx h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.track-mdx h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.track-mdx h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.track-mdx h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.track-mdx h5 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.track-mdx h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.track-mdx p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.track-mdx ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.track-mdx ol {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.track-mdx li {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.track-mdx a {
+  color: rgb(0, 102, 204);
+  text-decoration: underline;
+}
+
+.track-mdx a:hover {
+  color: rgb(0, 102, 204);
+  text-decoration: none;
+}
+
+.track-mdx blockquote {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left-width: 0.25rem;
+  border-left-color: rgb(0, 102, 204);
+  border-left-style: solid;
+}

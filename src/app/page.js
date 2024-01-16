@@ -1,12 +1,14 @@
-import Link from 'next/link'
 import MainLayout from '@/components/MainLayout'
+import Hero from '@/components/Hero'
+import TracksList from '@/components/TracksList'
+import { getTracksFetch } from '@/services/tracks.service'
 
-export default function Home () {
+export default async function Home () {
+  const tracks = await getTracksFetch()
   return (
     <MainLayout>
-      <Link href="/tracks">
-        Ver los tracks
-      </Link>
+      <Hero />
+      <TracksList title='Nuevos tracks' badget='No te los pierdas!' tracks={tracks} />
     </MainLayout>
   )
 }

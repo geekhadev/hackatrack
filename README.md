@@ -1,6 +1,6 @@
 # Hackatrack
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) ![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103) [![Build Status](https://travis-ci.org/Naereen/StrapDown.js.svg?branch=master)](https://travis-ci.org/Naereen/StrapDown.js) ![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg) ![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) ![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)
 
 Este es un proyecto donde la comunidad de Hack A Boss podrá compar el listado de tracks formativos que se imparten en la academia. Contiene la publicación de los tracks próximos a impartir, así como la posibilidad de consultar el contenido impartido en los tracks anteriores.
 

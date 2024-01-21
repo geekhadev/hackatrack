@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const yamlFront = require('yaml-front-matter')
 
-const directoryPath = path.join(__dirname, '../content')
+const directoryPath = path.join(__dirname, '../../public/content')
 const output = []
 
 fs.readdir(directoryPath, (err, files) => {

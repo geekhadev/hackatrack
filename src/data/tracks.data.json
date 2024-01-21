@@ -1,16 +1,16 @@
 [
-  {
-    "title": "CMS Headless",
-    "date": "01 Enero 2023",
-    "excerpt": "es una arquitectura que permite separar el contenido de la presentación ...",
-    "cover": "/tracks/cms-headless.png",
-    "deploy": "",
-    "github": "",
-    "youtube": "",
-    "authorName": "@geekhadev",
-    "authorAvatar": "https://avatars.githubusercontent.com/u/499907?v=4",
-    "authorGithub": "https://github.com/geekhadev",
-    "status": "draft",
-    "slug": "cms-headless"
-  }
+    {
+        "title": "CMS Headless",
+        "date": "01 Enero 2023",
+        "excerpt": "es una arquitectura que permite separar el contenido de la presentación ...",
+        "cover": "/tracks/cms-headless.png",
+        "deploy": "",
+        "github": "",
+        "youtube": "",
+        "authorName": "@geekhadev",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/499907?v=4",
+        "authorGithub": "https://github.com/geekhadev",
+        "status": "draft",
+        "slug": "cms-headless"
+    }
 ]

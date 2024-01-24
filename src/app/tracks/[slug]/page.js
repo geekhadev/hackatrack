@@ -23,7 +23,7 @@ export default async function Page ({ params }) {
     <TrackLayout>
         <div className='flex flex-col gap-1'>
           <img src={frontmatter.cover} alt={frontmatter.title} className="rounded-lg" />
-          <h3 className="col-span-2 text-xl mt-4 font-bold flex flex-row items-center text-gray-200 text-balance">
+          <h3 className="col-span-2 text-5xl mt-4 font-bold flex flex-row items-center text-gray-200 text-balance">
             {frontmatter.title}
           </h3>
           <p className="text-gray-400 text-balance">{frontmatter.excerpt}</p>

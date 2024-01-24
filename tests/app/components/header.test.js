@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 describe('Header', () => {
   test('renders header with correct text', () => {
     render(<Header />)
-    const headerElement = screen.getByText(/HackABoss/i)
+    const headerElement = screen.getByText(/inicio/i)
     expect(headerElement).toBeInTheDocument()
   })
 })

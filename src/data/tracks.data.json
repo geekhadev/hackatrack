@@ -1,16 +1,16 @@
 [
     {
-        "title": "CMS Headless",
-        "date": "01 Enero 2023",
-        "excerpt": "es una arquitectura que permite separar el contenido de la presentación ...",
-        "cover": "/tracks/cms-headless.png",
+        "title": "Introducción a NextJS",
+        "date": "13 Enero 2024",
+        "excerpt": "Next.js: el framework de React para crear web apps rápidas y optimizadas.",
+        "cover": "/tracks/introduction-nextjs.png",
         "deploy": "",
-        "github": "",
+        "github": "https://github.com/geekhadev/hackatrack",
         "youtube": "",
         "authorName": "@geekhadev",
         "authorAvatar": "https://avatars.githubusercontent.com/u/499907?v=4",
         "authorGithub": "https://github.com/geekhadev",
-        "status": "draft",
-        "slug": "cms-headless"
+        "status": "published",
+        "slug": "introduction-nextjs"
     }
 ]

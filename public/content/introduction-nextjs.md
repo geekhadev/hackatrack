@@ -1,30 +1,40 @@
 ---
-title: 'CMS Headless'
-date: '01 Enero 2023'
-excerpt: 'es una arquitectura que permite separar el contenido de la presentación ...'
-cover: '/tracks/cms-headless.png'
+title: 'Introducción a NextJS'
+date: '13 Enero 2024'
+excerpt: 'Next.js: el framework de React para crear web apps rápidas y optimizadas.'
+cover: '/tracks/introduction-nextjs.png'
 deploy: ''
-github: ''
+github: 'https://github.com/geekhadev/hackatrack'
 youtube: ''
 authorName: '@geekhadev'
 authorAvatar: 'https://avatars.githubusercontent.com/u/499907?v=4'
 authorGithub: 'https://github.com/geekhadev'
-status: 'draft'
+status: 'published'
 ---
 
 ### Introducción
 
-Next.js es un excelente framework de React que nos permite crear aplicaciones web de forma rápida y sencilla, con una excelente experiencia de desarrollo, y un equipo genial que siempre está en el top de JavaScript. Actualmente ha tenido mucho aumento en su popularidad, según la [StateOfJs](https:StateOfJs.com), se posiciona como uno de los mas usados frameworks de renderizado para  React. 
+[Next.js](https://nextjs.org/) es un excelente framework de [React](https://react.dev/) que nos permite crear aplicaciones web de forma rápida y sencilla, con una excelente experiencia de desarrollo, y un equipo genial que siempre está en el top de JavaScript. Actualmente ha tenido mucho aumento en su popularidad, según la [StateOfJs](https:StateOfJs.com), se posiciona como uno de los mas usados frameworks de renderizado para  React.
 
 Pero, ¿Por que Next.js es tan popular?
 
-Para que una herramienta de JavaScript hoy en día se haga tan popular en mi opinión debe debe ser fácil de aprender y debe estar optimizada para el rendimiento de un sitio web, dos cosas que Next.js nos ayuda a cumplir sin mayores complicaciones.
+Para que una herramienta de JavaScript hoy en día se haga tan popular influyen varios factores: debe ser fácil de aprender y debe estar optimizada para el rendimiento de un sitio web de alta concurrencia, dos cosas que Next.js nos ayuda a cumplir sin mayores complicaciones.
 
-Principales caracteristicas que encontramos en Next.js: sistema de enrutamiento basado en el sistema de archivos que nos hace entender en todo momento la estructura del proyecto, fácil implementación de Server Side Rendering (SSR), Client Side Rendering (CSR) y Static Site Generation (SSG), optimización de imágenes, soporte para TypeScript, creación de API muy similar a Express, integración con una solución de despliegue pensado para Next.js.
+Algunas de las principales caracteristicas que encontramos en Next.js: sistema de enrutamiento basado en el sistema de archivos que nos hace entender en todo momento la estructura de rutas de nuestro proyecto, fácil implementación de Server Side Rendering (SSR), Client Side Rendering (CSR) y Static Site Generation (SSG), optimización de imágenes usando el component `next/image`, soporte para TypeScript, creación de API integrada en el framework y de fácil implementación y bajo o nula configuración, integración con una solución de despliegue pensado  y optimizado para Next.js, y una gran comunidad que cada crea nuevas integraciones y plantillas.
 
-Algunos de los casos de uso en los que se puede implementar son: sitios web de comercio electrónico, Aplicaciones web empresariales, Sitios web de medios y noticias, Aplicaciones web de viajes y turismo, básicamente se puede implementar crear cualquier sitio web que requiera un alto rendimiento y una excelente experiencia de usuario. Aunque hay mejores soluciones si lo que buscas es crear un pequeño sitio web personal y estático.
+Algunos de los casos de uso en los que se puede implementar son: sitios web de comercio electrónico, Aplicaciones web empresariales, Sitios web de medios y noticias, Aplicaciones web de viajes y turismo, básicamente se puede implementar crear cualquier sitio web que requiera un alto rendimiento y una excelente experiencia de usuario. Aunque dependiendo de las necesidades de tu proyecto podrías encontrar mejores soluciones.
 
 <br />
+
+### Requisitos
+
+Para poder seguir este track formativo es necesario tener conocimientos básicos de JavaScript, HTML y CSS, y tener instalado las siguientes herramientas:
+
+- Editor de código de preferencias ([Visual studio code](https://code.visualstudio.com/), [Intellij](https://www.jetbrains.com/idea/))
+- Conexión a Internet
+- [Node +12]()
+- [npm](https://docs.npmjs.com/cli/v8/commands/npm-install), [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable), [pnpm](https://pnpm.io/installation)
+- [NVM](https://github.com/nvm-sh/nvm) (opcional)
 
 ### Instalación
 
@@ -37,27 +47,29 @@ Aunque hay varias formas de instalar Node.js, la forma más sencilla es usar npm
 - Instala create-next-app usando npm:
 
 ```bash
-npx create-next-app hack-a-boss-geekhadev
+npx create-next-app@latest hackatrack
 ```
-> Este comando creará un nuevo proyecto de Next.js llamado nextjs-app en tu sistema. Si prefieres usar yarn o pnpm en lugar de npm.
+> Este comando creará un nuevo proyecto de Next.js llamado nextjs-app en tu sistema. Si prefieres usar otro package manager como yarn o pnpm, puedes usarlo en lugar de npm al ejecutar este comando.
 
 Irán apareciendo una serie de preguntas, las cuales puedes responder de la siguiente manera:
 
 ```bash
-✔ Would you like to use TypeScript? … No / Yes
-✔ Would you like to use ESLint? … No / Yes
-✔ Would you like to use Tailwind CSS? … No / Yes
-✔ Would you like to use `src/` directory? … No / Yes
-✔ Would you like to use App Router? (recommended) … No / Yes
-✔ Would you like to customize the default import alias (@/*)? … No / Yes
+✔ Would you like to use TypeScript? … No / Yes -> no
+✔ Would you like to use ESLint? … No / Yes -> yes
+✔ Would you like to use Tailwind CSS? … No / Yes -> yes
+✔ Would you like to use `src/` directory? … No / Yes -> yes
+✔ Would you like to use App Router? (recommended) … No / Yes -> yes
+✔ Would you like to customize the default import alias (@/*)? … No / Yes -> no
 ```
+
+> Nota: no hay respuestas correctas, todo dependerá de lo que quieras en la configuración de tu proyecto, esto es solo la configuracieon que usamos para el track.
 
 ¡Y eso es todo! Ahora toma un ☕  mientras se instalan las dependencias.
 
 Luego que se instalen las dependencias, entra al directorio del proyecto y ejecuta el siguiente comando:
 
 ```bash
-cd hack-a-boss-geekhadev
+cd hackatrack
 npm run dev
 ```
 
@@ -66,7 +78,7 @@ npm run dev
 ### Estructura del proyecto
 
 ```
-nextjs-app/
+your-project/
   ├── node_modules/
   ├── public/
   │   ├── next.svg
@@ -88,14 +100,13 @@ nextjs-app/
   ├── postcss.config.js
   ├── README.md
   └── tailwind.config.js
-
 ```
 
-A continuación, se detalla la función de cada directorio y archivo:
+A continuación, se detalla la función de los directorios y archivos mas importantes al iniciar nuestro proyecto:
 
-`node_modules/`: Este directorio contiene todas las dependencias y módulos necesarios para que funcione el proyecto. No se debe modificar ni eliminar manualmente.
+`node_modules/`: Este directorio contiene todas las dependencias y módulos necesarios para que funcione el proyecto. No se debe modificar ni eliminar manualmente. Se recomienda que este directorio no se debe subir a un repositorio de control de versiones.
 
-`public/`: Este directorio contiene todos los archivos estáticos que se deben servir públicamente, como imágenes o archivos CSS. Los archivos que se colocan aquí se pueden acceder en la aplicación utilizando el prefijo /public/.
+`public/`: Este directorio contiene todos los archivos estáticos que se deben servir públicamente, como imágenes o archivos CSS. Los archivos que se colocan aquí se pueden acceder en el despliegue de la aplicación en la ruta /nombre-archivo.extensión. Por ejemplo, el archivo next.svg se puede acceder en la ruta /next.svg. [Documentación Static File Serving](https://nextjs.org/docs/basic-features/static-file-serving)
 
 `src/app/`: Este es el "nuevo" directorio de gestión de url basadas en archivos ideado por NextJS. Cada fichero en este directorio se convierte en una ruta accesible a través de la aplicación. Por ejemplo, el archivo index.js se convierte en la página principal del sitio. Además, dentro de este directorio, existe una carpeta llamada api/ que se usa para crear rutas de API. [Documentación Routing](https://nextjs.org/docs/app/building-your-application/routing)
 
@@ -103,7 +114,7 @@ A continuación, se detalla la función de cada directorio y archivo:
 
 `src/app/layout.js`: Este archivo contiene el componente Layout, que se utiliza para envolver todas las páginas de la aplicación. El componente Layout se utiliza para agregar elementos que se deben mostrar en todas las páginas de la aplicación, como encabezados, pies de página, barras de navegación y otros elementos. (También es posible crear layouts personalizados para páginas específicas) [Documentación Layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts)
 
-`src/app/page.js`: Este fichero es la página principal de la aplicación. Se utiliza para mostrar el contenido principal de la aplicación, es el punto de entrada a la aplicación web.
+`src/app/page.js`: Este fichero es la página principal de la aplicación. Se utiliza para mostrar el contenido principal de la aplicación, es el punto de entrada a la aplicación web y hace referencia a la url `http://localhost:3000/`.
 
 `.eslintrc`: Este archivo contiene la configuración de ESLint, que es una herramienta de análisis de código estático para identificar patrones problemáticos encontrados en el código JavaScript.
 
@@ -119,7 +130,7 @@ A continuación, se detalla la función de cada directorio y archivo:
 
 ### Configurando editor
 
-Agregamos una configuración básica para que nuestro editor de código nos ayude a escribir código de la mejor manera posible. Principalmente para mantener una buena indentación y posterior instalaremos un linter para que nos ayude a mantener menos errores en nuestro código.
+Agregamos una configuración básica para que nuestro editor de código nos ayude a escribir código de la mejor manera posible. Principalmente para mantener una buena indentación y posterior instalaremos un linter para que nos ayude a detectar errores en nuestro código.
 
 Crea un fichero en la raíz del proyecto llamado `.editorconfig` y agrega la siguiente configuración:
 
@@ -137,30 +148,29 @@ indent_size = 2
 
 ### Rutas
 
-Inicialmente podemos encontrar en nuestro proyecto solo la ruta inicial `/` y la ruta `/api/hello` que nos permite hacer una petición `GET` a la ruta y nos regresa un `json` con un mensaje de saludo.
+Inicialmente podemos encontrar en nuestro proyecto solo la ruta inicial `/` y la ruta `/api/hello` que nos permite hacer una petición `GET` nos regresa un `json` con un mensaje de saludo.
 
-Vamos a hacer una configuración básica para crear las rutas de nuestro proyecto y vamos a explicar cada ruta su funcionamiento.
+Estas son las rutas que vamos a utilizar para hacer las prácticas de nuestro track, prácticaremos: construción de API, parámetros en rutas de apis, páginas server side render, cliente side render, obtención de parametros en rutas.
 
 | Ruta                    | Path                              | Descripción                                                                       |
 |-------------------------|-----------------------------------|-----------------------------------------------------------------------------------|
-| /api/tracks             | src/app/api/tracks/index.js       | API de productos (práctica API)                                                   |
-| /api/tracks/:slug       | src/app/api/tracks/[slug].js      | API detalle de un track (práctica API)                                            |
-| /                       | src/app/page.js                   | Listado de tracks (práctica [SSR](/workshops/nextjs#server-side-rendering))       |
-| /tracks/:slug           | src/app/tracks/[slug].js          | Detalle de un producto (práctica [SSR](/workshops/nextjs#server-side-rendering))  |
-| /next-tracks            | src/app/next-tracks/page.js       | Próximos tracks (práctica [SSR](/workshops/nextjs#server-side-rendering))         |
-| /about-me               | src/app/about-me/page.js          | Próximos tracks (práctica [SSR](/workshops/nextjs#server-side-rendering))         |
+| /api/tracks             | src/app/api/tracks/index.js       | [API]() de tracks                                                                 |
+| /api/tracks/:slug       | src/app/api/tracks/[slug].js      | [API]() detalle de un track                                                       |
+| /                       | src/app/page.js                   | Listado de tracks ([SSR](/workshops/nextjs#server-side-rendering))                |
+| /tracks/:slug           | src/app/tracks/[slug].js          | Detalle de un track ([CSR](/workshops/nextjs#client-side-rendering))              |
+| /tracks/pendding        | src/app/tracks/pending/page.js    | Tracks pendientes ([SSR](/workshops/nextjs#server-side-rendering))                |
 
-> Todas las paths de las rutas se encuentran en la carpeta `src/pages`
+> Todas las paths de las rutas se encuentran en la carpeta `src/pages` y son las utilizadas en el track en vivo, es posible que luego en el avance del proyecto se reciban pull request o mejoras y se cambien estás rutas en el proyecto final.
 
 <br />
 
 ### Configuración test estáticos
 
-Los tests estáticos son utilizados para identificar y corregir errores de sintaxis, estilo y otros problemas en el código fuente en tiempo de programación. Los test estáticos analizan el código fuente y ofrecen sugerencias para mejorar su calidad, legibilidad y mantenibilidad.
+Los tests estáticos son utilizados para identificar y corregir errores de sintaxis, estilo y otros problemas en el código fuente, se ejecuta en tiempo de programación. Los test estáticos analizan el código fuente y ofrecen sugerencias para mejorar su calidad, legibilidad y mantenibilidad.
 
 Si recuerdan en la instalación del proyecto aceptamos la instalación de un Linter que Next nos propone, este linter es [ESLint](https://eslint.org/), el cual nos ayuda a mantener un código limpio y ordenado. Es una buena práctica que utilices linters en todos tus proyectos así te darás cuenta de muchos errores mucho antes de ir a producción o ejecutar el código.
 
-Vamos a complementar la configuración de ESLint con una guía de estilos y configuración mas estricta para que nos ayude a mantener un código limpio y ordenado.
+Inicializamos la configuración del Eslint:
 
 ```bash
 npx eslint --init
@@ -215,8 +225,6 @@ Nos hará una serie de preguntas, las cuales puedes responder de la siguiente ma
 
 > Nota: recuerda que la guía de estilos y parámetros de configuración del linter pueden variar según tus gustos y las necesidades del proyecto y del equipo.
 
-Hay dos formas de correr los test estáticos, la primera es desde la terminal y es principalmente usada para los pipelines de integración continua, la segunda es desde el editor de código, en este caso usaremos VSCode. Así que veremos las dos configuraciones:
-
 ***Configuración del comando `lint` para uso en la terminal***
 
 Configuración del comando `lint` en el `package.json`, en caso de que no se encuentren los comandos en el archivo, agregarlos.
@@ -265,7 +273,7 @@ Agregamos la extensión de NextJS para que nos ayude a identificar ciertas funci
 }
 ```
 
-> Esta configuración es opcional
+> Nota: esta configuración es opcional, pero ayuda a evitar errores y alertas de estilos que pueden ser propios por NextJS.
 
 Y como extensión de complemento puedes instalar Error Lens, la cual nos ayudará a identificar los errores de sintaxis y estilo en el código de una forma más visual.
 
@@ -273,13 +281,15 @@ Y como extensión de complemento puedes instalar Error Lens, la cual nos ayudar�
 
 ### Configuración test para api
 
-Para implementar test a nuestra API que será nuestra principal fuente de datos y la parte mas importante de nuevo proyecto, vamos a utilizar [Jest](https://jestjs.io/)
+Para implementar test a nuestra API que será nuestra principal fuente de datos, vamos a utilizar [Jest](https://jestjs.io/)
 
 Por lo que debemos instalarlo como dependencia de desarrollo:
 
 ```
 npm i -D jest
 ```
+
+> Nota: actualmente hay otras soluciones como [vitest]() para tests un poco más rápidos y optimizados.
 
 Posterior a ello vamos a crear un archivo de configuración en la carpeta raíz del proyecto llamado `jest.config.js` y vamos a agregar la siguiente configuración:
 
@@ -293,16 +303,16 @@ const createJestConfig = nextJest({
 const customJestConfig = {
   moduleDirectories: ['node_modules', '<rootDir>/'],
   moduleNameMapper: {
-    "^@api(.*)$": "<rootDir>/src/app/api$1" // map @api to src/pages/api
+    "^@api(.*)$": "<rootDir>/src/app/api$1"
   }
 }
 
 module.exports = createJestConfig(customJestConfig)
 ```
 
-Por último agregamos a los scripts de nuestro package.json los comandos de ejecución:
+Por último agregamos a los scripts de nuestro `package.json` los comandos de ejecución:
 
-```
+```json
 "scripts": {
   ...
   "test": "jest",
@@ -314,7 +324,7 @@ Por último agregamos a los scripts de nuestro package.json los comandos de ejec
 
 ### Configuración test para componentes
 
-Para la segunda parte de nuestra aplicación debemos construir un sitio web en rutas creadas para mostrar el listado de productos y los detalles de un producto, para ello vamos a utilizar [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) para poder probar nuestros componentes.
+Para la segunda parte de nuestra aplicación debemos construir un sitio web que nos servirá para mostrar el listado de tracks y los detalles de un track, para ello vamos a utilizar [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) para poder probar nuestros componentes.
 
 Para usar React Testing Library vamos a instalar las siguientes dependencias:
 
@@ -336,6 +346,25 @@ const customJestConfig = {
 ```
 
 Y tenemos lista la configuración para poder ejecutar los test de nuestros componentes con el mismo comando que usamos para la API.
+
+Un ejemplo de test para un componente sería el siguiente:
+
+```js
+// file: /test/app/components/header.test.js
+
+import { render, screen } from '@testing-library/react'
+import Header from '@components/header'
+
+describe('Header', () => {
+  it('should render the heading', () => {
+    render(<Header />)
+
+    const heading = screen.getByText(/Hackatrack/i)
+
+    expect(heading).toBeInTheDocument()
+  })
+})
+```
 
 <br />
 
@@ -384,177 +413,141 @@ Ya solo queda, como en los pasos anteriores, agregar el comando a los scripts de
 ***Nuevos directorios y archivos agregados a nuestro proyecto***
 
 ```
-nextjs-app/
-  ├── __tests__/
-  │   └── components/
-  │       └── title.test.js
-  │   └── pages/
+your-project/
+  ├── node_modules/
+  ├── public/
+  │   ├── next.svg
+  │   └── vercel.svg
+  ├── src/
+  │   └── app/
+  │       ├── page.js
+  │       ├── layout.js
+  │       ├── global.css
+  │       ├── favicon.ico
   │       └── api/
-  │           └── products/
-  │               |── [id].test.js
-  │               └── index.test.js
+  │           └── check.js
+  ├── tests/
+  │   └── components/
+  │       └── header.test.js
+  │   └── api/
+  │       └── tracks/
+  │           └── route.test.js
   ├── cypress/
   │   └── e2e/
   │       └── home.cy.js
+  ├── .eslintrc.json
+  ├── .gitignore
+  ├── jsconfig.json
+  ├── next.config.js
+  ├── package-lock.json
+  ├── package.json
+  ├── postcss.config.js
   ├── cypress.config.js
   ├── jest.config.js
-  └── yarn.lock
-
+  ├── README.md
+  └── tailwind.config.js
 ```
+
+> Nota: una forma sencilla de asociar nuestros tests a los archivos a testear es utilizar la misma estructura de archivos y directorios en nuestros tests.
 
 ### Mock de datos
 
-Para la práctica de API, vamos a utilizar un mock de datos para simular la respuesta de una API real, para ello vamos a crear un directorio llamado `mocks` en la raíz del proyecto y dentro de este directorio vamos a crear un archivo llamado `products.json` y vamos a agregar los siguientes datos:
+Para la práctica de API, vamos a utilizar un mock de datos para simular la respuesta de una API real, para ello vamos a crear un directorio llamado `data` en la raíz del proyecto y dentro de este directorio vamos a crear un archivo llamado `tracks.data.json` y vamos a agregar los siguientes datos:
 
 ```json
 [
-  {
-    "id": 1,
-    "nombre": "Dell XPS 13",
-    "precio": 999.99,
-    "marca": "Dell",
-    "modelo": "XPS 13 9305",
-    "url_imagen": "https://example.com/images/dell-xps-13-9305.jpg"
-  },
-  {
-    "id": 2,
-    "nombre": "HP Spectre x360",
-    "precio": 1249.99,
-    "marca": "HP",
-    "modelo": "Spectre x360 14t",
-    "url_imagen": "https://example.com/images/hp-spectre-x360-14t.jpg"
-  },
-  {
-    "id": 3,
-    "nombre": "Lenovo ThinkPad X1 Carbon",
-    "precio": 1399.99,
-    "marca": "Lenovo",
-    "modelo": "ThinkPad X1 Carbon 9th Gen",
-    "url_imagen": "https://example.com/images/lenovo-thinkpad-x1-carbon-9th-gen.jpg"
-  },
-  {
-    "id": 4,
-    "nombre": "MSI GS66 Stealth",
-    "precio": 1799.99,
-    "marca": "MSI",
-    "modelo": "GS66 Stealth 10SE",
-    "url_imagen": "https://example.com/images/msi-gs66-stealth-10SE.jpg"
-  },
-  {
-    "id": 5,
-    "nombre": "ASUS ZenBook 14",
-    "precio": 899.99,
-    "marca": "Asus",
-    "modelo": "ZenBook 14 UX425EA",
-    "url_imagen": "https://example.com/images/asus-zenbook-14-ux425ea.jpg"
-  },
-  {
-    "id": 6,
-    "nombre": "Dell Inspiron 15 5000",
-    "precio": 679.99,
-    "marca": "Dell",
-    "modelo": "Inspiron 15 5502",
-    "url_imagen": "https://example.com/images/dell-inspiron-15-5502.jpg"
-  },
-  {
-    "id": 7,
-    "nombre": "HP Pavilion 15",
-    "precio": 749.99,
-    "marca": "HP",
-    "modelo": "Pavilion 15-eg0025nr",
-    "url_imagen": "https://example.com/images/hp-pavilion-15-eg0025nr.jpg"
-  },
-  {
-    "id": 8,
-    "nombre": "Lenovo IdeaPad Flex 5",
-    "precio": 599.99,
-    "marca": "Lenovo",
-    "modelo": "IdeaPad Flex 5 14",
-    "url_imagen": "https://example.com/images/lenovo-ideapad-flex-5-14.jpg"
-  },
-  {
-    "id": 9,
-    "nombre": "MSI Modern 14",
-    "precio": 849.99,
-    "marca": "MSI",
-    "modelo": "Modern 14 B11SB",
-    "url_imagen": "https://example.com/images/msi-modern-14-b11sb.jpg"
-  },
-  {
-    "id": 10,
-    "nombre": "ASUS VivoBook S15",
-    "precio": 799.99,
-    "marca": "Asus",
-    "modelo": "VivoBook S15 S533",
-    "url_imagen": "https://example.com/images/asus-vivobook-s15-s533.jpg"
-  },
-  {
-    "id": 11,
-    "nombre": "Acer Swift 3",
-    "precio": 649.99,
-    "marca": "Acer",
-    "modelo": "Swift 3 SF314",
-    "url_imagen": "https://example.com/images/acer-swift-3-sf314.jpg"
-  },
-  {
-    "id": 12,
-    "nombre": "Apple MacBook Air",
-    "precio": 999.00,
-    "marca": "Apple",
-    "modelo": "MacBook Air M1",
-    "url_imagen": "https://example.com/images/apple-macbook-air-m1.jpg"
-  }
+    {
+        "title": "Track 1",
+        "date": "13 Enero 2024",
+        "excerpt": "este es un track formativo de prueba ...",
+        "cover": "placeholder.png",,
+        "deploy": "",
+        "github": "",
+        "youtube": "",
+        "authorName": "@geekhadev",
+        "authorAvatar": "placeholder.png",
+        "authorGithub": "https://github.com",
+        "status": "published",
+        "slug": "track-1"
+    },
+    {
+        "title": "Track 2",
+        "date": "10 Octubre 2023",
+        "excerpt": "este es un track formativo de prueba ...",
+        "cover": "placeholder.png",,
+        "deploy": "",
+        "github": "",
+        "youtube": "",
+        "authorName": "@geekhadev",
+        "authorAvatar": "placeholder.png",
+        "authorGithub": "https://github.com",
+        "status": "published",
+        "slug": "track-2"
+    },
+    {
+        "title": "Track 3",
+        "date": "13 Enero 2024",
+        "excerpt": "este es un track formativo de prueba ...",
+        "cover": "placeholder.png",,
+        "deploy": "",
+        "github": "",
+        "youtube": "",
+        "authorName": "@geekhadev",
+        "authorAvatar": "placeholder.png",
+        "authorGithub": "https://github.com",
+        "status": "draft",
+        "slug": "track-3"
+    },
 ]
 
 ```
 
-> Nota: para otras prácticas podríamos sustiruir estos datos simulados por una conexión a base de datos.
+> Nota: para otras prácticas podrías sustiruir estos datos simulados por una conexión a base de datos o a cualquier otra fuente de datos.
 
 <br />
 
 ### Creando el API
 
-Para nuestra api debemos crear dos endpoints, uno para obtener todos los productos y otro para obtener un producto por su id.
+Para nuestra api debemos crear dos endpoints, uno para obtener todos los tracks y otro para obtener un track por su slug.
 
 ***Primero los test***
 
 Vamos a crear primero nuestros test y luego vamos a crear los endpoints. Y así podremos de alguna manera tener una guía de lo que vamos a crear. Y prácticaremos los principios de TDD.
 
 ```js
-// file: /__tests__/pages/api/products/index.test.js
+// file: /test/app/api/tracks/route.test.js
 
-import handler from '@api/products/index';
-import products from '../../../../mocks/products.json';
+import { GET } from '@api/tracks/route'
+import TRACKS from '@/data/tracks.data.json'
 
-describe('GET /api/products', () => {
+describe('GET /api/tracks', () => {
   it('should return 200', async () => {
-
     const req = {}
     const res = {
       status: jest.fn().mockReturnThis(),
       json: jest.fn().mockReturnThis()
     }
 
-    await handler(req, res)
+    const response = await GET(req, res)
+    const data = await response.json()
 
-    expect(res.status).toHaveBeenCalledWith(200)
-    expect(res.json).toHaveBeenCalledWith(products)
-  });
-});
+    expect(response.status).toBe(200)
+    expect(JSON.stringify(data)).toBe(JSON.stringify(TRACKS))
+  })
+})
 ```
 
 ```js
-// file: /__tests__/pages/api/products/[id].test.js
+// file: /test/app/api/tracks/[slug]/route.test.js
 
-import handler from '@api/products/[id]';
-import products from '../../../../mocks/products.json';
+import { GET } from '@api/tracks/[slug]/route'
+import TRACKS from '@/data/tracks.data.json'
 
-describe('GET /api/products/:id', () => {
-  it('should return 200 when product is found', async () => {
-
+describe('GET /api/tracks/:slug', () => {
+  it('should return 200 when track is found', async () => {
     const req = {
       query: {
-        id: products[0].id
+        slug: TRACKS[0].slug
       }
     }
     const res = {
@@ -562,78 +555,78 @@ describe('GET /api/products/:id', () => {
       json: jest.fn().mockReturnThis()
     }
 
-    await handler(req, res)
-  
-    expect(res.status).toHaveBeenCalledWith(200)
-    expect(res.json).toHaveBeenCalledWith(products[0])
-  });
-  
-  it('should return 404 when product is not found', async () => {
+    const response = await GET(req, res)
+    const data = await response.json()
 
+    expect(response.status).toBe(200)
+    expect(JSON.stringify(data)).toBe(JSON.stringify(TRACKS[0]))
+  })
+
+  it('should return 404 when track is not found', async () => {
     const req = {
       query: {
-        id: 0
+        slug: 'not-found'
       }
     }
     const res = {
       status: jest.fn().mockReturnThis(),
       json: jest.fn().mockReturnThis()
     }
-  
-    await handler(req, res)
-  
-    expect(res.status).toHaveBeenCalledWith(404)
-  });
-});
+
+    const response = await GET(req, res)
+    console.log(response.status)
+
+    expect(response.status).toBe(404)
+  })
+})
+
 ```
 
-***Primero los endpoints***
+***Ahora los endpoints***
 
 Ahora vamos a crear nuestros endpoints.
 
 ```js
-// file: /src/pages/api/products/index.js
+// file: /src/app/api/tracks/route.js
 
-import products from '../../../../mocks/products.json';
+/**
+ * @jest-environment node
+ */
+import TRACKS from '@/data/tracks.data.json'
 
-const handler = (req, res) => {
-  try {
-    res.status(200).json(products);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-};
-
-export default handler;
+export async function GET () {
+  return Response.json(TRACKS)
+}
 ```
 
 ```js
-// file: /src/pages/api/products/[id].js
-import products from '../../../../mocks/products.json';
+// file: /src/app/api/tracks/[slug]/route.js
+/**
+ * @jest-environment node
+ */
+import TRACKS from '@/data/tracks.data.json'
 
-const handler = (req, res) => {
-  try {
+export async function GET (req, res) {
+  const { slug } = req.query
+  const TRACK = TRACKS.find(track => track.slug === slug)
 
-    const searchId = Number(req.query.id);
-
-    const product = products.find(({ id }) => id === searchId);
-    
-    if (!product) res.status(404);
-    
-    res.status(200).json(product);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
+  if (!TRACK) {
+    return Response.json({
+      error: 'Not found'
+    }, {
+      status: 404
+    })
   }
-};
 
-export default handler;
+  return Response.json(TRACK)
+}
 ```
 
 <br />
 
 ### Server Side Rendering
 
-Server Side Rendering (SSR) es una técnica utilizada en el desarrollo web que consiste en generar el contenido HTML de una página web en el servidor antes de enviarlo al navegador del usuario. En lugar de cargar y procesar todo el contenido en el navegador, como ocurre en el Client Side Rendering (CSR), el SSR permite que el servidor renderice el contenido y lo envíe al navegador, lo que resulta en una página web completamente cargada y lista para ser visualizada.
+Server Side Rendering (SSR) es una técnica utilizada en el desarrollo web que consiste en generar el contenido HTML de una página web en el servidor antes de enviarlo al navegador del usuario. En lugar de cargar y procesar todo el contenido en el navegador, como ocurre en el Client Side Rendering (CSR), el SSR permite que el servidor renderice el contenido y lo envíe al navegador resolviendo muchas funcionalidades de JavaScript, lo que resulta en una página web completamente cargada y lista para ser visualizada.
 
 ***Ventajas:***
 
@@ -662,9 +655,11 @@ Accesibilidad: aplicaciones que deban ser accesibles para usuarios con conexione
 En nuestra práctica la forma de utilizar SSR en Next.js es de la siguiente manera:
 
 ```js
-import ProductCard from '@/components/products/card';
+// file: src/app/page.js
+import Track from '@/components/Track';
+import NoHaveTracks from '@/components/NoHaveTracks';
 
-const API = 'https://domain.app/api/products';
+const API = 'http://localhost:3000/api/tracks';
 
 async function getData() {
   const res = await fetch(API)
@@ -676,35 +671,30 @@ async function getData() {
   return res.json()
 }
 
-export default function Home() {
+export default async function Home() {
   const data = await getData();
   return (
-    <>
-      <section>
-        {data.length === 0 && (
-          <p>No hay productos disponibles</p>
-        )}
-        {data.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </section>
-    </>
+    <section>
+      {data && data.length === 0 
+        ? <NoHaveTracks /> 
+        : data.map((track) => <Track key={track.id} track={track} />)
+      }
+    </section>
   )
 }
 ```
 
-Podemos observar que en la función `getServerSideProps` hacemos una petición a la API para obtener los productos, y luego los pasamos como props a nuestro componente.
+Podemos observar que en la función `getData` hacemos una petición a la API para obtener los tracks, y luego los pasamos como props a nuestro componente.
 
-Con el uso de `getServerSideProps` Next.js identifica que el componente es una página y que debe ser renderizado en el servidor.
+Incluso podemos ver que el componente se declara como una función asincrona por lo que no necesitamos estados ni efectos para obtener los datos. Esto permite que sea un poco más fácil su implementación y entendimiento.
 
-En un ejemplo posterior veremos la diferencia con Client Side Rendering.
-
+> Nota: esto funciona porque por defecto en NextJS 13 los componentes son SSR en caso que se indique lo contrario agregando la etiqueta 'use cliente' en la parte inicial del componente. En un ejemplo posterior veremos la diferencia con Client Side Rendering.
 
 <br />
 
 ### Client Side Rendering
 
-Client Side Rendering (CSR) es una técnica utilizada en el desarrollo web donde el contenido HTML de una página se genera y renderiza en el navegador del usuario en lugar de en el servidor. En CSR, el navegador recibe los archivos JavaScript, CSS y otros recursos necesarios para construir y mostrar la página. Luego, el navegador ejecuta el JavaScript para generar el contenido HTML y manipular el DOM (Document Object Model) según sea necesario. Esta técnica es común en aplicaciones web de una sola página (SPA) y en aplicaciones web dinámicas.
+Client Side Rendering (CSR) es una técnica utilizada en el desarrollo web donde el contenido de una página se genera y renderiza en el navegador del usuario en lugar de en el servidor. En CSR, el navegador recibe los archivos JavaScript, CSS y otros recursos necesarios para construir y mostrar la página y funcionalidades. Luego, el navegador ejecuta el JavaScript para generar el contenido HTML y manipular el DOM (Document Object Model) según sea necesario. Esta técnica es común en aplicaciones web de una sola página (SPA) y en aplicaciones web muy dinámicas.
 
 ***Ventajas:***
 
@@ -737,12 +727,12 @@ En Next.js no hay una forma especial para hacer CSR por lo que podemos métodos 
 Veamos el ejemplo anterior pero con CSR:
 
 ```js
-// file: src/pages/index.js
-
+// file: src/app/page.js
 import { useEffect, useState } from 'react';
-import ProductCard from '@/components/products/card';
+import Track from '@/components/Track';
+import NoHaveTracks from '@/components/NoHaveTracks';
 
-const API = 'https://domain.app/api/products';
+const API = 'http://localhost:3000/api/tracks';
 
 async function getData() {
   const res = await fetch(API)
@@ -754,62 +744,27 @@ async function getData() {
   return res.json()
 }
 
-export default function Home({data}) {
-
-  const [products, setProducts] = useState([]);
-
+export default function Home() {
+  const [data, setData] = useState([]);
+  
   useEffect(() => {
-    getData.then(setProducts);
+    getData.then(setData);
   }, []);
 
   return (
-    <>
-      <section>
-        {data.length === 0 && (
-          <p>No hay productos disponibles</p>
-        )}
-        {data.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </section>
-    </>
+    <section>
+      {data && data.length === 0 
+        ? <NoHaveTracks /> 
+        : data.map((track) => <Track key={track.id} track={track} />)
+      }
+    </section>
   )
 }
 ```
 
+> Nota: una mejora a implementar en este ejemplo sería agregar un estado de carga para mostrar un loader mientras se obtienen los datos.
+
 <br />
-
-### Static Site Generation
-
-Static Site Generation (SSG) es una técnica utilizada en el desarrollo web en la que las páginas de un sitio web se generan y renderizan como archivos HTML estáticos durante la fase de compilación o construcción de la aplicación, en lugar de generarlas dinámicamente en tiempo real (a diferencia de SSR se generan solo una vez). Estos archivos estáticos se sirven a los usuarios cuando visitan el sitio web. El SSG es común en sitios web de contenido estático y en aplicaciones que no requieren actualizaciones en tiempo real o interacciones dinámicas.
-
-***Ventajas:***
-
-- Rendimiento: Los sitios generados estáticamente suelen ser más rápidos, ya que no requieren tiempo de procesamiento en el servidor para generar el contenido HTML. Los archivos estáticos pueden ser servidos rápidamente desde un CDN (Content Delivery Network) y, como resultado, ofrecen tiempos de carga reducidos para los usuarios.
-
-- Seguridad: Los sitios estáticos son más seguros que los sitios dinámicos, ya que no dependen de bases de datos o lenguajes de programación en el servidor. Esto reduce los ataques y el riesgo de vulnerabilidades.
-
-- Bajo costo y facilidad de implementación: Los sitios estáticos generalmente tienen costos de alojamiento más bajos y son más fáciles de implementar en comparación con los sitios dinámicos, ya que no requieren infraestructura de servidor compleja.
-
-- SEO optimizado: Los sitios generados estáticamente son fáciles de indexar por los motores de búsqueda, lo que los hace ideales para SEO.
-
-***Desventajas:***
-
-- Menos dinámico: Aunque es posible agregar interacción y contenido dinámico mediante JavaScript del lado del cliente, los sitios generados estáticamente son, en general, menos dinámicos que los sitios basados en SSR o CSR.
-
-- Actualizaciones de contenido: Los cambios en el contenido del sitio requieren la regeneración y la reimplantación del sitio completo, lo que puede ser más lento y menos flexible que las actualizaciones en tiempo real proporcionadas por el SSR y el CSR.
-
-***Algunos casos en los que usar Static Site Generation (SSG) sería una buena idea:***
-
-- Blogs y sitios de noticias: con contenido mayormente estático se benefician enormemente del SSG, ya que este enfoque proporciona tiempos de carga rápidos, mejor SEO y facilidad de implementación.
-
-- Portafolios y currículums en línea: un portafolio en línea o un sitio web personal para mostrar tus habilidades y experiencia, el SSG es una excelente opción, ya que te permite crear un sitio web de alto rendimiento y optimizado para SEO con un esfuerzo de desarrollo relativamente bajo.
-
-- Documentación y sitios de ayuda: como las guías de usuario y las páginas de preguntas frecuentes, son ideales para esté tipo de renderizado. Estos sitios a menudo contienen una gran cantidad de contenido de texto que no cambia con frecuencia.
-
-- Sitios de eventos y conferencias: estos sitios suelen requerir un alto rendimiento y una buena optimización de SEO para atraer a los asistentes y, a menudo, tienen un ciclo de vida corto y pocas o ninguna actualización de contenido.
-
-- Sitios web de pequeñas empresas: las pequeñas empresas que buscan crear un sitio web informativo con contenido estático, como detalles de contacto, servicios ofrecidos y testimonios de clientes, pueden beneficiarse del SSG. Estos sitios a menudo requieren un mantenimiento mínimo, un alto rendimiento y una buena optimización de SEO, lo que hace que el SSG sea una opción atractiva.
 
 ### ¿Qué tipo de renderizado usar?
 
@@ -821,7 +776,11 @@ Incluso es posible que un proyecto se beneficie de la combinación de diferentes
 
 ### Estilos
 
-Para este proyecto usaremos tailwindcss, pero puedes usar cualquier implementación de css o framework. Para hacer la instalación de tailwindcss puedes seguir los siguientes pasos:
+Para este proyecto usaremos tailwindcss, pero puedes usar cualquier implementación de css o framework. 
+
+> Nota: este paso puede ser opcional, ya que en la instalación del proyecto hemos seleccionado la instalación con tailwindcss. Esto solo debes hacerlo en caso de que no hayas seleccionado esa opción o que de alguna forma hayas eliminado los estilos globales o las configuraciones.
+
+Para hacer la instalación de tailwindcss puedes seguir los siguientes pasos:
 
 Ejecutamos el comando de instlación de tailwindcss y sus dependencias.
 
@@ -861,13 +820,13 @@ Agregamos los estilos globales en el archivo `src/app/globals.css`.
 @tailwind utilities;
 ```
 
-> Podría necesitarse reiniciar el servidor de desarrollo.
+> Nota: Podría necesitarse reiniciar el servidor de desarrollo.
 
 <br />
 
 ### Deploy
 
-Para desplegar un proyecto de Next.js es posible usar diferentes proveedores de hosting, en este caso usaremos Vercel por ser la misma empresa que desarrolla Next.js y por ser una plataforma de hosting gratuita y de fácil uso.
+Para desplegar un proyecto de Next.js es posible usar diferentes proveedores, en este caso usaremos [Vercel](https://vercel.com) por ser la empresa que desarrolla Next.js y por ende la plataforma mejor pensada para desplegar proyectos de NextJS. Ah si! y también porque es gratuita (hasta cierto nivel).
 
 Así como contamos con diversos proveedores de hosting, también contamos con diversas formas de desplegar nuestro proyecto, en este caso usaremos el método más fácil a mi parcer de desplegar en Vercel el CLI.
 
@@ -893,31 +852,7 @@ vercel deploy
 
 Y solo queda seguir las intrucciones del CLI.
 
-<br />
-
-### Repositorio
-
-Después de haber leído la guía, puedes descargar el proyecto completo desde el siguiente enlace: [Descargar proyecto](https://github.com/hackaboss-workshops-irwing/nextjs-app) y empezar a analizar todo el código.
-
-Para instalar el proyecto debes:
-
-1. Clonar el repositorio
-
-```
-git clone https://github.com/hackaboss-workshops-irwing/nextjs-app
-```
-
-2. Instalar las dependencias
-
-```
-npm install
-```
-
-3. Ejecutar el proyecto
-
-```
-npm run dev
-```
+> Nota: también se puede hacer el despliegue vinculando nuestro proyecto de Github a Vercel, revisa la [documentación](https://nextjs.org/learn-pages-router/basics/deploying-nextjs-app/deploy) para más información.
 
 <br />
 
@@ -925,6 +860,10 @@ npm run dev
 
 1 - Antes de empezar a hacer código lee la guía completa, esto te ayudará a entender mejor el proyecto.
 
-2 - Analiza el código de la aplicación creada, y haz cambios para que puedas entender mejor como funciona, intenta crear otra pantalla o agregar un filtro de busqueda.
+2 - Sigue los pasos de la guía, pero también haz pasos nuevos y modificaciones para que te enfrentes a nuevos retos.
 
-3 - Cuando tengas la recomendación 1 y 2 hechas, intenta crear una aplicación desde cero, y usa el proyecto como referencia.
+3 - Ante cualquier imprevisto visita la documentación de NextJS, es muy completa y te ayudará a resolver cualquier duda.
+
+### Comunidad
+
+Tenemos un canal de NextJS en el servidor de Discord de Hack A Boss, donde puedes compartir tus dudas, avances y proyectos con la comunidad.

@@ -34,6 +34,15 @@
   padding: 0;
 }
 
+.track-mdx code {
+  background-color: #31313C;
+  border-radius: 0.25rem;
+  padding: 0.15rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  overflow-x: auto;
+}
+
 .track-mdx h1, .track-mdx h2, .track-mdx h3, .track-mdx h4, .track-mdx h5, .track-mdx h6 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -82,6 +91,8 @@
 .track-mdx ul {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  list-style: disc;
+  padding-left: 1rem;
 }
 
 .track-mdx ol {

@@ -25,7 +25,12 @@ export default async function Page ({ params }) {
     title: frontmatter.title,
     description: frontmatter.excerpt,
     openGraph: {
-      images: [frontmatter.cover]
+      images: [{
+        url: frontmatter.cover,
+        width: 800,
+        height: 600,
+        alt: frontmatter.title
+      }]
     }
   }
 

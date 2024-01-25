@@ -3,7 +3,12 @@ import Hero from '@/components/Hero'
 import TracksList from '@/components/TracksList'
 import { getTracksByStatus } from '@/services/tracks.service'
 
-export let metadata = {}
+export let metadata = {
+  metadataBase: new URL('https://hackatrack.vercel.app'),
+  alternates: {
+    canonical: '/'
+  }
+}
 
 export default async function Home () {
   const tracks = await getTracksByStatus('draft')
@@ -11,6 +16,7 @@ export default async function Home () {
   const openGraphCover = tracks && tracks[0] && tracks[0].cover ? tracks[0].cover : '/cover.png'
 
   metadata = {
+    ...metadata,
     title: 'Nuevos eventos! - Hack A Boss',
     description: 'Nuestros próximos tracks formativos y mucho más!',
     openGraph: {

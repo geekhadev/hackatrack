@@ -16,12 +16,18 @@ const getArticle = async (slug) => {
   return { frontmatter, content }
 }
 
-export let metadata = {}
+export let metadata = {
+  metadataBase: new URL('https://hackatrack.vercel.app'),
+  alternates: {
+    canonical: '/'
+  }
+}
 
 export default async function Page ({ params }) {
   const { frontmatter, content } = await getArticle(params.slug)
 
   metadata = {
+    ...metadata,
     title: frontmatter.title,
     description: frontmatter.excerpt,
     openGraph: {

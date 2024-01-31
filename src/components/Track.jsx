@@ -1,7 +1,7 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 const Track = ({
-  track: { id, slug, title, excerpt, cover, date, authorAvatar, authorName },
+  track: { id, slug, title, excerpt, cover, date, authorAvatar, authorName }
 }) => {
   return (
     <Link href={`/tracks/${slug}`} className="group flex flex-col">
@@ -32,7 +32,7 @@ const Track = ({
         </div>
       </dic>
     </Link>
-  );
-};
+  )
+}
 
-export default Track;
+export default Track

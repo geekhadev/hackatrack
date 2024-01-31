@@ -10,7 +10,7 @@ const TracksList = ({ title, badget, tracks }) => (
       }
     </h3>
     <div className="grid grid-cols-3 gap-4 py-6">
-      {tracks.map((track) => <Track track={track} key={track.id} />)}
+      {tracks.map((track) => <Track track={track} key={track.slug} />)}
     </div>
   </section>
 )

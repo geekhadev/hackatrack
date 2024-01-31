@@ -1,7 +1,7 @@
 ---
 title: 'Introducción a NextJS'
 date: '13 Enero 2024'
-excerpt: 'Next.js: el framework de React para crear web apps rápidas y optimizadas.'
+excerpt: 'Next.js: el framework de React para crear web apps rápidas y optimizadas ...'
 cover: '/tracks/introduction-nextjs.png'
 deploy: ''
 github: 'https://github.com/geekhadev/hackatrack'
@@ -866,4 +866,4 @@ Y solo queda seguir las intrucciones del CLI.
 
 ### Comunidad
 
-Tenemos un canal de NextJS en el servidor de Discord de Hack A Boss, donde puedes compartir tus dudas, avances y proyectos con la comunidad.
+Entra al canal de [HACK A BOSS]('https://www.hackaboss.com/') en Discord y comparte tus experiencias, dudas y proyectos con la comunidad.

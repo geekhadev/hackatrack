@@ -1,44 +1,30 @@
 [
-    {
-        "title": "Despliegue de proyectos JavaScript con Docker",
-        "date": "13 Enero 2024",
-        "excerpt": "Docker para distribuir aplicaciones JavaScript en cualquier entorno ...",
-        "cover": "/tracks/deploy-docker-javascript-projects.png",
-        "deploy": "",
-        "github": "",
-        "youtube": "",
-        "authorName": "@geekhadev",
-        "authorAvatar": "https://avatars.githubusercontent.com/u/499907?v=4",
-        "authorGithub": "https://github.com/geekhadev",
-        "status": "published",
-        "slug": "deploy-docker-javascript-projects"
-    },
-    {
-        "title": "Despliegue de proyectos JavaScript",
-        "date": "13 Enero 2024",
-        "excerpt": "Despliega proyectos en servidores como AWS, Digital Ocean, Netlify, Vercel ...",
-        "cover": "/tracks/deploy-javascript-projects.png",
-        "deploy": "",
-        "github": "",
-        "youtube": "",
-        "authorName": "@geekhadev",
-        "authorAvatar": "https://avatars.githubusercontent.com/u/499907?v=4",
-        "authorGithub": "https://github.com/geekhadev",
-        "status": "published",
-        "slug": "deploy-javascript-projects"
-    },
-    {
-        "title": "Introducción a NextJS",
-        "date": "13 Enero 2024",
-        "excerpt": "Next.js: el framework de React para crear web apps rápidas y optimizadas ...",
-        "cover": "/tracks/introduction-nextjs.png",
-        "deploy": "",
-        "github": "https://github.com/geekhadev/hackatrack",
-        "youtube": "",
-        "authorName": "@geekhadev",
-        "authorAvatar": "https://avatars.githubusercontent.com/u/499907?v=4",
-        "authorGithub": "https://github.com/geekhadev",
-        "status": "published",
-        "slug": "introduction-nextjs"
-    }
+  {
+    "title": "Despliegue de proyectos JavaScript",
+    "date": "13 Enero 2024",
+    "excerpt": "Despliega proyectos en servidores como AWS, Digital Ocean, Netlify, Vercel ...",
+    "cover": "/tracks/deploy-javascript-projects.png",
+    "deploy": "",
+    "github": "",
+    "youtube": "",
+    "authorName": "@geekhadev",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/499907?v=4",
+    "authorGithub": "https://github.com/geekhadev",
+    "status": "published",
+    "slug": "deploy-javascript-projects"
+  },
+  {
+    "title": "Introducción a NextJS",
+    "date": "13 Enero 2024",
+    "excerpt": "Next.js: el framework de React para crear web apps rápidas y optimizadas ...",
+    "cover": "/tracks/introduction-nextjs.png",
+    "deploy": "",
+    "github": "https://github.com/geekhadev/hackatrack",
+    "youtube": "",
+    "authorName": "@geekhadev",
+    "authorAvatar": "https://avatars.githubusercontent.com/u/499907?v=4",
+    "authorGithub": "https://github.com/geekhadev",
+    "status": "published",
+    "slug": "introduction-nextjs"
+  }
 ]

@@ -16,7 +16,7 @@ export default async function TracksCompleted () {
 
   metadata = {
     ...metadata,
-    title: 'Eventos pasados! - Hack A Boss',
+    title: 'Eventos pasados! - HACK A BOSS',
     description: 'Nuestros próximos tracks formativos y mucho más!',
     openGraph: {
       images: [openGraphCover]

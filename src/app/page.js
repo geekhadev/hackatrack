@@ -17,7 +17,7 @@ export default async function Home () {
 
   metadata = {
     ...metadata,
-    title: 'Nuevos eventos! - Hack A Boss',
+    title: 'Nuevos eventos! - HACK A BOSS',
     description: 'Nuestros próximos tracks formativos y mucho más!',
     openGraph: {
       images: [openGraphCover]

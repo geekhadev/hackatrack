@@ -2,9 +2,9 @@
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) ![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)
 
-Este es un proyecto donde la comunidad de Hack A Boss podrá compar el listado de tracks formativos que se imparten en la academia. Contiene la publicación de los tracks próximos a impartir, así como la posibilidad de consultar el contenido impartido en los tracks anteriores.
+Este es un proyecto donde la comunidad de HACK A BOSS podrá compar el listado de tracks formativos que se imparten en la academia. Contiene la publicación de los tracks próximos a impartir, así como la posibilidad de consultar el contenido impartido en los tracks anteriores.
 
-Este es un proyecto académico, realizado en el Track Formativo de Hack A Boss de NextJS y ReactJS, y no tiene nigún fin comercial, ni es un repositorio oficial de Hack A Boss.
+Este es un proyecto académico, realizado en el Track Formativo de HACK A BOSS de NextJS y ReactJS, y no tiene nigún fin comercial, ni es un repositorio oficial de HACK A BOSS.
 
 Te invitamos a leer el [código de conducta](./CODE_OF_CONDUCT.md) para que conozcas las reglas de convivencia del proyecto.
 

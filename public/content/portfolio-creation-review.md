@@ -1,6 +1,6 @@
 ---
 title: 'Creación y revisión de portafolios'
-date: '24 Febrero 2024'
+date: '26 Febrero 2024'
 excerpt: 'Revisemos y creamos un portafolios para mostrar nuestro trabajo y habilidades ...'
 cover: '/tracks/portfolio-creation-review.png'
 deploy: ''

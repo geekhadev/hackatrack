@@ -33,12 +33,12 @@
         "excerpt": "Integremos inteligencia artificial a proyectos fullstack Next.js ...",
         "cover": "/tracks/ia-nextjs.png",
         "deploy": "",
-        "github": "",
+        "github": "https://github.com/geekhadev/entrenador-programacion",
         "youtube": "",
         "authorName": "@geekhadev",
         "authorAvatar": "https://avatars.githubusercontent.com/u/499907?v=4",
         "authorGithub": "https://github.com/geekhadev",
-        "status": "draft",
+        "status": "published",
         "slug": "ia-nextjs"
     },
     {

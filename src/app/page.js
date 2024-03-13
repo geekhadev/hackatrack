@@ -1,6 +1,7 @@
 import MainLayout from '@/components/MainLayout'
 import Hero from '@/components/Hero'
 import TracksList from '@/components/TracksList'
+import TipsList from '@/components/TipsList'
 import { getTracksByStatus } from '@/services/tracks.service'
 
 export let metadata = {
@@ -12,6 +13,7 @@ export let metadata = {
 
 export default async function Home () {
   const tracks = await getTracksByStatus('draft')
+  const tips = await getTracksByStatus('tip')
 
   const openGraphCover = tracks && tracks[0] && tracks[0].cover ? tracks[0].cover : '/cover.png'
 
@@ -28,6 +30,7 @@ export default async function Home () {
     <MainLayout>
       <Hero />
       <TracksList title='Nuevos tracks' badget='No te los pierdas!' tracks={tracks} />
+      <TipsList title='Tips' badget='Super útiles!' tips={tips} />
     </MainLayout>
   )
 }

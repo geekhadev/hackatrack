@@ -1,5 +1,35 @@
 [
     {
+        "title": "Autenticación con Clerk",
+        "dateString": "16 Marzo 2024",
+        "date": "2024-03-16",
+        "excerpt": "Agrega un sistema de autenticación rápido y fácil...",
+        "cover": "/tips/content-auth-clerk.png",
+        "deploy": "",
+        "github": "",
+        "youtube": "",
+        "authorName": "@geekhadev",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/499907?v=4",
+        "authorGithub": "",
+        "status": "tip",
+        "slug": "content-auth-clerk"
+    },
+    {
+        "title": "Gestionar estados con Zustand",
+        "dateString": "16 Marzo 2024",
+        "date": "2024-03-16",
+        "excerpt": "Utiliza Zustand para gestionar el estado global de tu aplicación ...",
+        "cover": "/tips/content-global-state-zustand.png",
+        "deploy": "",
+        "github": "",
+        "youtube": "",
+        "authorName": "@geekhadev",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/499907?v=4",
+        "authorGithub": "",
+        "status": "tip",
+        "slug": "content-global-state-zustand"
+    },
+    {
         "title": "Despliegue de proyectos JavaScript con Docker",
         "dateString": "13 Enero 2024",
         "date": "2024-01-13",

@@ -10,7 +10,7 @@ const TracksList = ({ title, badget, tracks }) => (
       }
     </h3>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-6">
-      {tracks
+      {tracks && tracks
         .sort((a, b) => a.date > b.date ? -1 : 1)
         .map((track) => <Track track={track} key={track.slug} />)}
     </div>

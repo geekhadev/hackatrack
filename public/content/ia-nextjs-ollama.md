@@ -14,3 +14,5 @@ status: 'draft'
 ---
 
 ### En construcción...
+
+Este contenido no dispondrá de clase en vivo solo la documentación.

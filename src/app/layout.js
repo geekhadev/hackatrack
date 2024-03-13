@@ -1,5 +1,6 @@
 import './globals.css'
 import Header from '@/components/Header'
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata = {
   title: 'Hack a Track',
@@ -40,6 +41,7 @@ export default function RootLayout ({ children }) {
       <body className="bg-[#121212]">
         <Header />
         {children}
+        <Analytics />
       </body>
     </html>
   )

@@ -19,6 +19,7 @@
     "@mdx-js/react": "^3.0.0",
     "@next/mdx": "^14.0.4",
     "@types/mdx": "^2.0.10",
+    "@vercel/analytics": "^1.2.2",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "marked": "^11.1.1",

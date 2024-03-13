@@ -1,6 +1,7 @@
 ---
 title: 'Despliegue de proyectos JavaScript con Docker'
-date: '13 Enero 2024'
+dateString: '13 Enero 2024'
+date: '2024-01-13'
 excerpt: 'Docker para distribuir aplicaciones JavaScript en cualquier entorno ...'
 cover: '/tracks/deploy-docker-javascript-projects.png'
 deploy: ''

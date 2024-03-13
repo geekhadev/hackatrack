@@ -1,6 +1,7 @@
 ---
 title: 'Despliegue de proyectos JavaScript'
-date: '13 Enero 2024'
+dateString: '13 Enero 2024'
+date: '2024-01-13'
 excerpt: 'Despliega proyectos en servidores como AWS, Digital Ocean, Netlify, Vercel ...'
 cover: '/tracks/deploy-javascript-projects.png'
 deploy: ''

@@ -1,8 +1,9 @@
 ---
-title: 'Integligencia Artificial con Next.js'
-date: '29 Febrero 2024'
+title: 'Integligencia Artificial con Next.js (OpenAI)'
+dateString: '29 Febrero 2024'
+date: '2024-02-29'
 excerpt: 'Integremos inteligencia artificial a proyectos fullstack Next.js ...'
-cover: '/tracks/ia-nextjs.png'
+cover: '/tracks/ia-nextjs-openai.png'
 deploy: ''
 github: 'https://github.com/geekhadev/entrenador-programacion'
 youtube: ''
@@ -29,8 +30,6 @@ Repasamos los concepctos básicos de Next.js principalmente el manejo de rutas, 
 
 - Tipos de modelos de inteligencia artificial
 
-Actualmente varias empresas se están disputando el puesto en IA, entre ellas destacamos en este track:
-
 #### ***[OpenAI](https://openai.com/)*** de OpenAI
 
 Ventajas:
@@ -42,30 +41,6 @@ Desventajas:
   - Es un modelo de pago
   - No es tan sencillo de integrar con otros modelos
   - No es open source
-
-#### ***[Ollama](https://ollama.ai/)*** de Meta
-
-Ventajas:
-  - Es un modelo de IA open source
-  - Tiene una API muy sencilla de usar
-  - Se puede usar de forma gratuita
-  - Se puede utilizar en modo local y sin conexión a internet
-  - Es muy sencillo de integrar con otros modelos
-
-Desventajas:
-  - No es tan avanzado como OpenAI
-  - El modelo responde con menos presición
-
-#### ***[Gemini](https://gemini.google.com/app)*** de Google
-
-> A la fecha del track formativo no hemos hecho pruebas con este modelo, pero revisa este contenido para ver si hay actualizaciones.
-
-Análizamos y mostramos ejemplos de los tipos de modelos de inteligencia artificial que existen, como por ejemplo:
-  - Modelos de lenguaje: GPT-3.5 Turbo, GPT-4 y GPT-4 Turbo.
-  - Modelos de visión: 
-  - Modelos de audio
-  - Modelos de recomendación
-  - Modelos de generación de texto
 
 ### Preparando las IA
 
@@ -81,16 +56,9 @@ Análizamos y mostramos ejemplos de los tipos de modelos de inteligencia artific
 
 > IMPORTANTE: no compartas tu API Key con nadie, ya que te pueden cobrar por su uso, no la subas a github, ni a ningún otro lugar público.
 
-#### Obteniendo una IA local (Ollama)
-
-1. Descarga el motor de modelos ollama desde [este enlace](https://ollama.com/download)
-2. Instala el motor de modelos ollama
-
-> Nota: funciona para sistemas operativos Windows, Linux y Mac (ARM y x86)
-
 ### Integrando IA con Next.js
 
-💻 Ahora si vamos manos a la obra, vamos a integrar OpenAI y Ollama con Next.js.
+💻 Ahora si vamos manos a la obra, vamos a integrar OpenAI con Next.js.
 
 #### Creando nuestro proyecto con Next.js
 
@@ -104,7 +72,7 @@ npx create-next-app@12 entrenador-programacion
 
 ```bash
 cd entrenador-programacion
-npm install openai ollama
+npm install openai
 ```
 
 #### Configuramos las variables de entorno

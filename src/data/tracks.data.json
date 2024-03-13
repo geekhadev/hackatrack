@@ -1,7 +1,8 @@
 [
     {
         "title": "Despliegue de proyectos JavaScript con Docker",
-        "date": "13 Enero 2024",
+        "dateString": "13 Enero 2024",
+        "date": "2024-01-13",
         "excerpt": "Docker para distribuir aplicaciones JavaScript en cualquier entorno ...",
         "cover": "/tracks/deploy-docker-javascript-projects.png",
         "deploy": "",
@@ -15,7 +16,8 @@
     },
     {
         "title": "Despliegue de proyectos JavaScript",
-        "date": "13 Enero 2024",
+        "dateString": "13 Enero 2024",
+        "date": "2024-01-13",
         "excerpt": "Despliega proyectos en servidores como AWS, Digital Ocean, Netlify, Vercel ...",
         "cover": "/tracks/deploy-javascript-projects.png",
         "deploy": "",
@@ -28,10 +30,41 @@
         "slug": "deploy-javascript-projects"
     },
     {
-        "title": "Integligencia Artificial con Next.js",
-        "date": "29 Febrero 2024",
+        "title": "Integligencia Artificial con Next.js (Gemini)",
+        "dateString": "15 Marzo 2024",
+        "date": "2024-03-15",
+        "excerpt": "Integremos Gemini IA a proyectos fullstack Next.js ...",
+        "cover": "/tracks/ia-nextjs-gemini.png",
+        "deploy": "",
+        "github": "",
+        "youtube": "",
+        "authorName": "@geekhadev",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/499907?v=4",
+        "authorGithub": "https://github.com/geekhadev",
+        "status": "draft",
+        "slug": "ia-nextjs-gemini"
+    },
+    {
+        "title": "Integligencia Artificial con Next.js (ollama)",
+        "dateString": "15 Marzo 2024",
+        "date": "2024-03-15",
+        "excerpt": "Integremos ollama IA a proyectos fullstack Next.js ...",
+        "cover": "/tracks/ia-nextjs-ollama.png",
+        "deploy": "",
+        "github": "",
+        "youtube": "",
+        "authorName": "@geekhadev",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/499907?v=4",
+        "authorGithub": "https://github.com/geekhadev",
+        "status": "draft",
+        "slug": "ia-nextjs-ollama"
+    },
+    {
+        "title": "Integligencia Artificial con Next.js (OpenAI)",
+        "dateString": "29 Febrero 2024",
+        "date": "2024-02-29",
         "excerpt": "Integremos inteligencia artificial a proyectos fullstack Next.js ...",
-        "cover": "/tracks/ia-nextjs.png",
+        "cover": "/tracks/ia-nextjs-openai.png",
         "deploy": "",
         "github": "https://github.com/geekhadev/entrenador-programacion",
         "youtube": "",
@@ -39,11 +72,12 @@
         "authorAvatar": "https://avatars.githubusercontent.com/u/499907?v=4",
         "authorGithub": "https://github.com/geekhadev",
         "status": "published",
-        "slug": "ia-nextjs"
+        "slug": "ia-nextjs-openai"
     },
     {
         "title": "Introducción a NextJS",
-        "date": "13 Enero 2024",
+        "dateString": "13 Enero 2024",
+        "date": "2024-01-13",
         "excerpt": "Next.js: el framework de React para crear web apps rápidas y optimizadas ...",
         "cover": "/tracks/introduction-nextjs.png",
         "deploy": "",
@@ -57,7 +91,8 @@
     },
     {
         "title": "Creación y revisión de portafolios",
-        "date": "26 Febrero 2024",
+        "dateString": "26 Febrero 2024",
+        "date": "2024-02-26",
         "excerpt": "Revisemos y creamos un portafolios para mostrar nuestro trabajo y habilidades ...",
         "cover": "/tracks/portfolio-creation-review.png",
         "deploy": "",

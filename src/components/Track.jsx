@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 const Track = ({
-  track: { id, slug, title, excerpt, cover, date, authorAvatar, authorName }
+  track: { id, slug, title, excerpt, cover, dateString, authorAvatar, authorName }
 }) => {
   return (
     <Link href={`/tracks/${slug}`} className="group flex flex-col">
@@ -25,9 +25,9 @@ const Track = ({
               alt={authorName}
             />
           )}
-          {date && <p className="text-balance text-gray-400">{authorName}</p>}
-          {date && (
-            <p className="text-balance text-yellow-500">Incia: {date}</p>
+          {dateString && <p className="text-balance text-gray-400">{authorName}</p>}
+          {dateString && (
+            <p className="text-balance text-yellow-500">Incia: {dateString}</p>
           )}
         </div>
       </dic>

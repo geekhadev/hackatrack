@@ -1,6 +1,7 @@
 ---
 title: 'Introducción a NextJS'
-date: '13 Enero 2024'
+dateString: '13 Enero 2024'
+date: '2024-01-13'
 excerpt: 'Next.js: el framework de React para crear web apps rápidas y optimizadas ...'
 cover: '/tracks/introduction-nextjs.png'
 deploy: ''
